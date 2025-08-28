@@ -22,15 +22,17 @@ public class Main {
             new SummerCourse("Algorithms", 3, 2),
             new SummerCourse("OOP", 2, 3)
     };
-    public static Course SearchCourse (String code){
+
+    public static Course SearchCourse(String code) {
 
         for (Course c : COURSES) {
-            if(c.Code.equals(code)){
+            if (c.Code.equals(code)) {
                 return c;
             }
         }
         return null;
     }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         try {
@@ -69,8 +71,8 @@ public class Main {
                 currentStudent.name = StudentName;
                 currentStudent.ID = StudentID;
                 currentStudent.level = StudentLevel;
-                scan.nextLine();
                 for (int j = 0; j < noOfRegisteredCourses; j++) {
+                    scan.nextLine();
                     System.out.printf("Course %d: \n", j + 1);
                     System.out.print("Code: ");
                     String code = scan.nextLine();
