@@ -35,6 +35,7 @@ public abstract class Student {
         }
         for (int i = 0; i < noOfCourses; i++) {
             if (courseList[i].equals(c1)) {
+                System.out.println("The Course has already been registered ");
                 return false;
             }
         }
